@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+:root{
+  --default-font-color: #FFFFFF;
+  --hover-font-color: #CCCCCC;
+  --submit-color: #009B86;
+  --selected-color: #009B86;
+  --submit-hover: #34AC9C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto;
+  background-color: #0D2436;
+  color: var(--default-font-color);
+  position: relative;
+}
+
+.auth{
+  height: 100vh !important;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+button{
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}

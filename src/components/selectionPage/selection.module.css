@@ -1,0 +1,101 @@
+.header{
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+.selection_body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+.title{
+  text-align: center;
+}
+.category{
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+@media screen and (max-width: 600px) {
+  .category {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 600px) {
+  .category {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 992px) {
+  .category {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.card{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card:hover{
+  background-color: var(--submit-hover);
+}
+.card p:hover{
+  color: var(--hover-font-color);
+}
+.card button{
+  background-color: var(--selected-color);
+}
+.selected_card{
+  background-color: var(--selected-color) !important;
+}
+.card img{
+  aspect-ratio: 1;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.button_wrap{
+  width: 100%;
+  text-align: center;
+}
+.button_wrap button{
+  padding: 20px 30px;
+  background-color: var(--submit-color);
+}
+.button_wrap button:hover{
+  background-color: var(--submit-hover);
+}
+.modal_container{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(15, 15, 15, 0.438);
+}
+.modal_body{
+  padding: 20px;
+  height: 60%;
+  background-color: var(--default-font-color);
+  color: black;
+  text-align: end;
+}
+.modal_body p{
+  text-align: center;
+}
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.result .card:hover{
+  background-color: var(--default-font-color);
+}
