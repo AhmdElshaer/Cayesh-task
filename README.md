@@ -5,6 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm i`
+to install "node_modules" dependences
+
+### `json-server --watch db.json --port 3031`
+run this commend to run the mock data used in this repo.
 
 ### `npm start`
 
